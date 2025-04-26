@@ -3,19 +3,20 @@
 SliceVault is a decentralized file storage and sharing application built on Web3 technologies. It leverages IPFS for file storage and Ethereum smart contracts to securely store file metadata on the blockchain, ensuring transparency, immutability, and user control over their data.
 
 ![SliceVault Top Section](https://raw.githubusercontent.com/XyonX/portfolio-content/refs/heads/main/Portfolios/slice/images/slice-top.jpeg)
-*Header section of SliceVault, featuring wallet connection and navigation*
-
+_Header section of SliceVault, featuring wallet connection and navigation_
 
 ## Overview
 
 SliceVault allows users to:
+
 - Upload files to IPFS, a decentralized storage network.
 - Store file metadata (e.g., IPFS content identifier (CID), file name, description, size, and uploader address) on an Ethereum smart contract.
 - Retrieve files by querying the blockchain for metadata and fetching the file from IPFS.
 - View and manage their uploaded files securely.
 
 The application consists of a React-based frontend and a Node.js backend, hosted in separate repositories:
-- **Frontend**: [https://github.com/XyonX/slice.git](https://github.com/XyonX/slice.git)
+
+- **Frontend**: [https://github.com/XyonX/SliceVault.git](https://github.com/XyonX/SliceVault.git)
 - **Backend**: [https://github.com/XyonX/slice-backend.git](https://github.com/XyonX/slice-backend.git)
 
 Try it live at [SliceVault](https://slicevault.vercel.app/).
@@ -30,17 +31,19 @@ Try it live at [SliceVault](https://slicevault.vercel.app/).
 - **Transaction Tracking**: Provides links to Etherscan for tracking blockchain transactions.
 
 ![SliceVault Mid Section](https://raw.githubusercontent.com/XyonX/portfolio-content/refs/heads/main/Portfolios/slice/images/slice-mid.png)
-*File upload section of SliceVault, showcasing the intuitive UI*
+_File upload section of SliceVault, showcasing the intuitive UI_
 
 ## How It Works
 
 1. **File Upload**:
+
    - Users select a file, add a description and tag, and connect their Ethereum wallet.
    - The file is uploaded to IPFS, generating a unique CID.
    - The backend prepares a transaction to store the file metadata (CID, name, description, size, uploader address, tag) on the Ethereum smart contract.
    - The transaction is executed, and the user receives a confirmation with the transaction hash and Etherscan link.
 
 2. **File Retrieval**:
+
    - Users can query the blockchain to retrieve metadata for their files using their wallet address.
    - The metadata includes the IPFS CID, which is used to fetch the file from IPFS.
    - The file is then delivered to the user.
@@ -51,7 +54,7 @@ Try it live at [SliceVault](https://slicevault.vercel.app/).
    - Provides view functions to retrieve all files or files by a specific uploader.
 
 ![SliceVault Full View](https://raw.githubusercontent.com/XyonX/portfolio-content/refs/heads/main/Portfolios/slice/images/slice-full.jpeg)
-*Full view of the SliceVault application interface*
+_Full view of the SliceVault application interface_
 
 ## Technology Stack
 
@@ -66,6 +69,7 @@ Try it live at [SliceVault](https://slicevault.vercel.app/).
 ## Installation
 
 ### Prerequisites
+
 - Node.js (v16 or higher)
 - MetaMask (or another Ethereum wallet)
 - IPFS node (local or remote, e.g., Infura IPFS gateway)
@@ -75,6 +79,7 @@ Try it live at [SliceVault](https://slicevault.vercel.app/).
 ### Steps
 
 1. **Clone the Repositories**:
+
    - Frontend:
      ```bash
      git clone https://github.com/XyonX/slice.git
@@ -87,6 +92,7 @@ Try it live at [SliceVault](https://slicevault.vercel.app/).
      ```
 
 2. **Install Dependencies**:
+
    - For the frontend:
      ```bash
      cd slice
@@ -99,6 +105,7 @@ Try it live at [SliceVault](https://slicevault.vercel.app/).
      ```
 
 3. **Set Up Environment Variables**:
+
    - Frontend: Create a `.env` file in the `slice` directory:
      ```env
      NEXT_PUBLIC_BACKEND_URL=http://localhost:5000
@@ -109,6 +116,7 @@ Try it live at [SliceVault](https://slicevault.vercel.app/).
      ```
 
 4. **Deploy Smart Contract**:
+
    - Ensure Truffle is installed (`npm install -g truffle`).
    - In the backend repository, navigate to the `truffle` directory:
      ```bash
@@ -118,6 +126,7 @@ Try it live at [SliceVault](https://slicevault.vercel.app/).
    - Update `CONTRACT_ADDRESS` in the backend code (e.g., `controllers/uploadFile.js`) with the deployed contract address.
 
 5. **Run IPFS**:
+
    - If using a local IPFS node:
      ```bash
      ipfs daemon
@@ -125,6 +134,7 @@ Try it live at [SliceVault](https://slicevault.vercel.app/).
    - Alternatively, configure an IPFS gateway (e.g., Infura) in `slice-backend/lib/ipfsClient.js`.
 
 6. **Start the Backend**:
+
    - In the backend repository:
      ```bash
      cd slice-backend
@@ -132,6 +142,7 @@ Try it live at [SliceVault](https://slicevault.vercel.app/).
      ```
 
 7. **Start the Frontend**:
+
    - In the frontend repository:
      ```bash
      cd slice
@@ -144,25 +155,28 @@ Try it live at [SliceVault](https://slicevault.vercel.app/).
 ## Usage
 
 1. **Connect Wallet**:
+
    - Click "Connect Wallet" to link your MetaMask wallet.
    - Ensure you're on the Holesky testnet.
 
 2. **Upload a File**:
+
    - Select a file, add a description and tag, and click "Upload".
    - Confirm the transaction in MetaMask.
    - Wait for the file to be uploaded to IPFS and the metadata to be stored on the blockchain.
 
 3. **View Files**:
+
    - Navigate to the "My Files" section to see your uploaded files.
    - Click a file to retrieve it from IPFS using the blockchain metadata.
 
 4. **Track Transactions**:
    - Use the provided Etherscan link to view transaction details on the Holesky testnet.
 
-
 ## Smart Contract
 
 The `FileStorage.sol` contract includes:
+
 - **uploadFile**: Stores file metadata (IPFS CID, name, description, size, uploader, tag) and emits a `FileUploaded` event.
 - **getFile**: Retrieves metadata for a specific file ID.
 - **getAllFiles**: Returns metadata for all uploaded files.
@@ -173,6 +187,7 @@ Deployed on the Holesky testnet at `CONTRACT_ADDRESS`.
 ## Project Structure
 
 ### Frontend (`slice`)
+
 ```
 slice/
 ├── components/           # React components (e.g., FileUploader)
@@ -183,6 +198,7 @@ slice/
 ```
 
 ### Backend (`slice-backend`)
+
 ```
 slice-backend/
 ├── controllers/          # API logic (e.g., uploadFile, getAllFiles)
@@ -207,6 +223,7 @@ slice-backend/
 ## Contributing
 
 Contributions are welcome! Please:
+
 1. Fork the relevant repository ([frontend](https://github.com/XyonX/slice.git) or [backend](https://github.com/XyonX/slice-backend.git)).
 2. Create a feature branch (`git checkout -b feature/your-feature`).
 3. Commit your changes (`git commit -m 'Add your feature'`).
