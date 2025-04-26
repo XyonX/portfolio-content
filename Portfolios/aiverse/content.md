@@ -2,11 +2,11 @@
 
 Aiverse is a revolutionary chatbot messaging application designed to provide a seamless, multi-AI conversational experience. Unlike traditional single-chatbot apps, Aiverse functions as a messenger platform where users can interact with multiple AI bot contacts, such as Gemini, Qwen, Mistral, DeepSeek, Llama, Gemma, and more. Built with a modern MERN stack (MongoDB, Express.js, React, Node.js) and Next.js, Aiverse offers a fully dynamic, multi-user environment with personalized data storage, responsive design, and advanced AI conversation management.
 
-Aiverse is a unified AI playground where users can engage in natural, context-aware, and personalized conversations with various large language models (LLMs), create custom persona-based chatbots, and explore a discovery page for new bots. The app emphasizes message streaming, smart context management, cross-bot interaction, and personalized responses based on user interests and profile descriptions, making it an innovative solution for AI enthusiasts and professionals alike.
-
 **Live Demo**: [https://aiverseapp.site/](https://aiverseapp.site/)
 
 ![Aiverse Conversation Area](https://raw.githubusercontent.com/XyonX/portfolio-content/refs/heads/main/Portfolios/aiverse/images/aiverse-thumbnail.png)
+
+Aiverse is a unified AI playground where users can engage in natural, context-aware, and personalized conversations with various large language models (LLMs), create custom persona-based chatbots, and explore a discovery page for new bots. The app emphasizes message streaming, smart context management, cross-bot interaction, and personalized responses based on user interests and profile descriptions, making it an innovative solution for AI enthusiasts and professionals alike.
 
 ---
 
