@@ -2,6 +2,9 @@
 
 If you've ever noticed the little padlock icon in your browser or seen "https://" in a website URL, you've encountered SSL (Secure Sockets Layer). But what exactly is it, and how does it keep your data safe? Let’s break it down in a clear, beginner-friendly way, covering what an SSL certificate is, the key players involved, and how the whole process works.
 
+  ![Alt text](https://raw.githubusercontent.com/XyonX/portfolio-content/refs/heads/main/Blogs/how-ssl-works/images/ssl-cover.png "ssl")
+
+
 ## What is an SSL Certificate?
 
 An **SSL certificate** is a digitally signed document that binds a **public key** to an identity, typically a specific domain name (e.g., `aiverseapp.site`). Think of it like a digital passport for a website—it verifies that the site is legit and enables secure, encrypted communication between your browser and the server.
@@ -30,6 +33,9 @@ To understand SSL, you need to know the main components and parties involved:
 
 3. **Domain Name Server (DNS Provider)**\
    This is where you purchased your domain (e.g., Hostinger). The DNS provider manages your domain’s records and ensures requests to your domain are routed correctly.
+
+![Alt text](https://raw.githubusercontent.com/XyonX/portfolio-content/refs/heads/main/Blogs/how-ssl-works/images/ssl-diagram.png "SSL Diagram")
+
 
 ## How Does SSL Work?
 
