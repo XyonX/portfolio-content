@@ -23,11 +23,11 @@ The core focus areas were:
 ## 🖼️ Preview
 
 ### Desktop Experience
-![Stock Market Prediction – Desktop](images/desktop.jpeg)
+![Stock Market Prediction – Desktop](https://raw.githubusercontent.com/XyonX/portfolio-content/refs/heads/main/Portfolios/market-predict/images/desktop.jpeg)
 
 ### Mobile Experience
 <p align="center">
-  <img src="images/mobile.jpeg" alt="Stock Market Prediction – Mobile View" width="300">
+  <img src="https://raw.githubusercontent.com/XyonX/portfolio-content/refs/heads/main/Portfolios/market-predict/images/mobile.jpeg" alt="Stock Market Prediction – Mobile View" width="300">
 </p>
 
 ---
@@ -101,3 +101,4 @@ The core focus areas were:
 ## 📌 Summary
 
 This project showcases my ability to design and build **production-oriented, ML-powered web applications**, covering the complete lifecycle — from backend modeling and API design to frontend visualization and deployment.
+
